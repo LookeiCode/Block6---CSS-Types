@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <header>
+      <h1>My very organized grocery list</h1>
+    </header>
+    
+    <h3 class="spacer-bottom">Pantry Items</h3>
+    <div class="container"> <!-- this will be the flex container -->
+      <section class="spacer-right">
+        <h3>Canned</h3>
+        <ol> 
+          <!-- 
+            ol = ordered list, ul = unordered list
+            you should not have <li> without a ol or ul above
+              -->
+          <li>Corn</li>        
+          <li>Cosdfsadfsadfarn</li>
+          <li>Corn</li>
+          <li>Corn</li>
+        </ol>
+      </section>
+      <section>
+        <h3>Canned</h3>
+        <ul>
+          <li>Corn</li>        
+          <li>Corn</li>
+          <li>Corn</li>
+          <li>Corn</li>
+        </ul>
+      </section>
+    </div>
+    
+    <div class="spacer"></div>
+    
+    <h3 class="spacer-bottom">Freezer Items</h3>
+    <div class="container"> <!-- this will be the flex container -->
+      <section class="spacer-right">
+        <h3>Canned</h3>
+        <ul>
+          <li>Corn</li>        
+          <li>Cosdfsadfsadfarn</li>
+          <li>Corn</li>
+          <li>Corn</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Canned</h3>
+        <ul>
+          <li>Corn</li>        
+          <li>Corn</li>
+          <li>Corn</li>
+          <li>Corn</li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
+
+
+Stanley Lim
+  8 hours ago
+notes
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Bin</title>
+  
+  <!--
+
+  these two are used on parent elements (the bicc boi div in our case)
+  justify-content focuses on the "horizontal" rule
+    - space-between just puts space between each child element
+    - space-around just puts space all around each child element
+    - space-evenly
+    - center
+    - flex-end just puts it at the right side of the container
+    - flex-start puts it at the left side of the container. it's default so you never really have to
+    
+  align-items focuses on "vertical". it will only apply it within the parent
+    - same thing as above
+
+  flex-wrap: wrap
+
+  flex-direction: column. if you add another child element,
+    typically it adds it onto the row
+    if you make it flex-direction: column
+    then it will add it to the column instead
+  
+  
+  this is used for child element
+  flex
+
+  -->
+  
+  <style>
+    
+    .container {
+      display: flex;
+      border: 5px solid blue;
+      flex-direction: column;
+      height: 50vh;
+      
+      justify-content: space-between;      
+      /* align-items: space-between; */
+    
+    }
+    
+    .big-square {
+      height: 50px;
+      width: 50px;
+      background-color: red;
+      border: 1px solid black;
+    }
+    
+    .square {
+      height: 50px;
+      width: 50px;
+      background-color: red;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container"> <!-- parent element aka the bicc boi div -->
+    
+    <div class="big-square"></div>    
+    <div class="square"></div>
+    <div class="square"></div>
+   
+  </div>
+
+</body>
+</html>

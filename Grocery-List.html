@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grocery List</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!--Internal CSS-->
+    <style>
+        .SColor1 {
+            background-color: grey;
+        }
+
+        .SColor2 {
+            background-color: grey;
+        }
+
+        /* To make the sections go side by side*/
+        .div1 {
+            display: flex;
+            gap: 10px;
+        }
+
+        li,h2 {
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--Main Header-->
+    <main>
+        <h1 style=color:blue;text-align:center;>My Very Organized Grocery List</h1>
+    </main>
+
+    <!--Pantry Items section-->
+    <h1 class="SLabels">Pantry Items</h1>
+    <div class="div1">
+        <section class="SColor1" style="border: solid; width: 200px;">
+            <h2>CANNED</h2>
+            <ul>
+                <li>Corn</li>
+                <li>Pasta</li>
+                <li>Beef</li>
+            </ul>
+
+        </section>
+        <section class="SColor1" style="border: solid; width: 200px;">
+            <h2>DRY GOODS</h2>
+            <ul>
+                <li>Rice</li>
+                <li>Beans</li>
+                <li>Oats</li>
+            </ul>
+        </section>
+        <img src="https://www.eatingwell.com/thmb/YX07CpdUyjoygQdcBRCRVaLw79I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/how-to-stock-your-pantry-092a041f345148a78c37eaa4ad434106.jpg" style="width: 300px; height: 200px;"></a>
+    </div>
+
+    <!--Freezer Items Section-->
+    <h1 class="SLabels">Freezer Items</h1>
+    <div class="div1">
+        <section class="SColor2" style="border: solid; width: 200px;">
+            <h2>VEGGIES</h2>
+            <ol>
+                <li>Brocolli</li>
+                <li>Carrots</li>
+                <li>Peppers</li>
+            </ol>
+        </section>
+        <section class="SColor2" style="border: solid; width: 200px;">
+            <h2>SNACKS</h2>
+            <ol>
+                <li>Candy</li>
+                <li>Chips</li>
+                <li>Cookies</li>
+            </ol>
+        </section>
+        <img src="https://www.thedailymeal.com/img/gallery/15-foods-you-should-always-keep-in-your-freezer/What-to-keep-in-freezer.jpg" style="width: 300px; height: 200px;"></a>
+    </div>
+
+</body>
+<!--I didn't use 3 heading types. I could've, and did have it with h1-h3 being used, but it didn't look good on the page so I just used h1-h2.-->
+</html>
